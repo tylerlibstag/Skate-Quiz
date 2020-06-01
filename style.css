@@ -1,0 +1,97 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url('grayb.jpg');
+    
+}
+h1{
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding: auto;
+    text-align:center;
+    font-family: "Stick";
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color:black;
+    font-size: 70px;
+}
+h2{
+    color:black;
+    position: absolute;
+    padding: 100px;
+    margin: 400px;
+    text-align:center;
+    font-family: "Anti Hero";
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: white; 
+    font-size: 30px;
+}
+#strt{
+    background-image: url('th.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-left: auto;
+    
+    color: white;
+    white-space: nowrap;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    position: middle;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+}
+.bttnctrl{
+    
+    padding-top: 850px;
+    margin-left: 850px;
+    
+}
+#bod{
+    background-image: url('skatebackround.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    
+}
+#question{
+    font-size: 30px;
+    color: wheat;
+}
+#a{
+    background-color: white;
+    color: black;
+    padding: auto;
+    border: 2px solid red;
+    width:10%;
+}
+#b{
+    background-color: white;
+    color: black;
+    border: 2px solid blue; 
+    width:10%;
+}
+#c{
+    background-color: white;
+    color: black;
+    border: 2px solid yellow;
+    width:10%;
+}
+#d{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    width:10%; 
+}
+#seconds{
+    font-size: 80px;
+    color: white;
+}
+.gameOver{
+    font-size: 80px;
+}
