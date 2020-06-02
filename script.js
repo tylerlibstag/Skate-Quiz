@@ -47,42 +47,49 @@ var stored = '';
 
 
 
-   
-    
+
+
+
 
 
 
 
 strt.addEventListener("click", function () {
-    
+
+    displayQuestion();
+    //startTimer();
+    seconds = 15;
     var timerId = setInterval(startTimer, 1000);
-    
     function startTimer() {
-        
-      if (seconds == -1) {
-         clearTimeout(timerId);
-        var over = $('<div>');
-        over.attr('id', 'middle');
-        over.text('Times up');
-        $('#middle').append(over);
-        reset();
-      } else {
-        sec.innerHTML =
-        seconds--;
-      }
+
+    
+
+        if (seconds == -1) {
+            
+            clearInterval(timerId);
+    
+            var over = $('<div>');
+            over.attr('id', 'middle');
+            over.text('Times up');
+            $('#middle').append(over);
+    
+            reset();
+        } else {
+            sec.innerHTML = seconds--;
+        }
     }
-    
-    
-    displayQuestion() 
-    
+
+
 });
+
 
 
 
 function displayQuestion() {
     $('#strt').hide()
+    $('#para').hide()
 
-
+    
 
 
 
@@ -164,7 +171,10 @@ function answerCheck(answer) {
 
 function reset() {
     $('#strt').show()
+    $('#para').show()
     $('#question').empty()
+
+
 
     var button = document.getElementById('a');
     button.textContent = '';
@@ -183,9 +193,9 @@ function reset() {
     highScoreInput.attr('id', 'highScore');
     $('.gameOver').append(highScoreInput);
     localStorage.setItem("store", JSON.stringify(highScoreInput));
-    
-     
- 
+
+
+
 
     var button = $('<button>');
     button.attr('id', 'save');
@@ -193,17 +203,20 @@ function reset() {
     $('.gameOver').append(button);
 
 }
-function setStore(){
-    
+function setStore() {
+
     localStorage.getItem(".gameOver", JSON.stringify(highScoreInput));
     $('#store').append(highScoreInput);
-    
+
 }
 
 
 $(document).on('click', '#save', function () {
+    $('#save').hide();
+    $('#middle').hide();
+    $('.gameOver').hide();
     console.log('you got clicked', $('#highScore').val())
-    
+
 })
 
 

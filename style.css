@@ -63,12 +63,15 @@ h2{
     font-size: 30px;
     color: wheat;
 }
+#pick{
+    margin-top: -400px;
+}
 #a{
     background-color: white;
     color: black;
-    padding: auto;
     border: 2px solid red;
     width:10%;
+    
 }
 #b{
     background-color: white;
