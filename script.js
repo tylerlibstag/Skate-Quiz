@@ -53,11 +53,11 @@ var stored = '';
 
 
 
-
+//this function starts the timer while also allowing the user to visualize the questions that were initially hidden
 strt.addEventListener("click", function () {
 
     displayQuestion();
-    //startTimer();
+    
     seconds = 15;
     var timerId = setInterval(startTimer, 1000);
     function startTimer() {
@@ -84,14 +84,10 @@ strt.addEventListener("click", function () {
 
 
 
-
+// this is what controls the actual visualization of the questions while also hiding info that the user does not need when the test begins
 function displayQuestion() {
     $('#strt').hide()
     $('#para').hide()
-
-    
-
-
 
     question.innerHTML = "<p>" + questions[questionIndex] + "</p>";
 
@@ -125,11 +121,11 @@ $('.choice').on('click', function () {
 
 
 })
-
+// this function makes sure that when the user answers a question it either returns correct or incorrect
 function answerCheck(answer) {
 
 
-    console.log('this is the answer', answer, 'this is the correct answer', correctAnswer)
+    
 
 
 
@@ -169,6 +165,7 @@ function answerCheck(answer) {
 
 }
 
+// this prompts the user to put in there name so that their score will be saved
 function reset() {
     $('#strt').show()
     $('#para').show()
@@ -203,6 +200,7 @@ function reset() {
     $('.gameOver').append(button);
 
 }
+// this is what saves the users info to local storage. 
 function setStore() {
 
     localStorage.getItem(".gameOver", JSON.stringify(highScoreInput));
