@@ -31,25 +31,33 @@ h2{
     background-image: url('th.jpg');
     background-repeat: no-repeat;
     background-position:center;
-    margin-left: auto;
+   
     
     color: white;
     white-space: nowrap;
     width: 80px;
-    padding: 10px;
+    padding: 22px;
+    height: 10px;
+   
     text-align: center;
-    position: relative;
+    
+    
     z-index: 2;
-    position: middle;
+    
+    
     font-size: 16px;
-    margin: 50px;
+    position: absolute;
+    
+    margin-top: 400px; 
+    margin-left: 800px;   
     cursor: pointer;
 }
-.bttnctrl{
-    
-    padding-top: 850px;
-    margin-left: 850px;
-    
+#response{
+    position: absolute;
+    margin-top: 400px; 
+    margin-left: 800px;
+    color: white;
+    font-size: 25px;
 }
 #bod{
     background-image: url('skatebackround.jpg');
@@ -59,12 +67,21 @@ h2{
     height: 100%;
     
 }
+.bttnctrl{
+    
+    position: relative;
+}
 #question{
     font-size: 30px;
-    color: wheat;
+    color: black;
+    text-align: center;
 }
 #pick{
-    margin-top: -400px;
+
+    
+    padding: auto;
+    margin-left: 800px;
+    position: relative;
 }
 #a{
     background-color: white;

@@ -147,7 +147,7 @@ function answerCheck(answer) {
     else {
         alert('u got it wrong!!')
         var li = document.getElementById('response');
-        li.textContent = 'sorry, nice try though the correct answer is';
+        li.textContent = 'sorry, that is incorrect';
         seconds -= 3;
         input++
         console.log('false');
